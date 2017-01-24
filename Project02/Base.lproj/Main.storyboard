@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O2p-Ur-CqL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="O2p-Ur-CqL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -42,15 +42,23 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Whu-PD-xD9"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IZ-u9-shy">
+                                <rect key="frame" x="140.5" y="584" width="94.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gXC-WT-h8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I93-PZ-yMe"/>
                             <constraint firstItem="1Tv-Xf-YPx" firstAttribute="top" secondItem="gXC-WT-h8E" secondAttribute="bottom" constant="30" id="Kel-uz-Jbg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4IZ-u9-shy" secondAttribute="bottom" constant="59" id="SM5-t6-C3C"/>
                             <constraint firstItem="gXC-WT-h8E" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="Tfa-dm-4G5"/>
                             <constraint firstItem="a1z-DH-wV7" firstAttribute="centerX" secondItem="1Tv-Xf-YPx" secondAttribute="centerX" id="cfR-Qc-fD8"/>
                             <constraint firstItem="a1z-DH-wV7" firstAttribute="top" secondItem="1Tv-Xf-YPx" secondAttribute="bottom" constant="30" id="nkU-3R-Sa4"/>
                             <constraint firstItem="1Tv-Xf-YPx" firstAttribute="centerX" secondItem="gXC-WT-h8E" secondAttribute="centerX" id="rAT-h5-LbH"/>
+                            <constraint firstItem="4IZ-u9-shy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rha-jt-riM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ch5-Cg-TIo"/>
@@ -58,6 +66,7 @@
                         <outlet property="button1" destination="gXC-WT-h8E" id="jeQ-er-Z8l"/>
                         <outlet property="button2" destination="1Tv-Xf-YPx" id="tDp-92-KEh"/>
                         <outlet property="button3" destination="a1z-DH-wV7" id="bRS-zt-Sip"/>
+                        <outlet property="scoreLabel" destination="4IZ-u9-shy" id="fK4-ke-D9s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,7 +76,6 @@
         <!--Navigation Controller-->
         <scene sceneID="VG6-wv-0ZF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZyT-yU-b9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O2p-Ur-CqL" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cOT-fm-vqo">
@@ -79,6 +87,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YaR-sF-Iu3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZyT-yU-b9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="234" y="139"/>
         </scene>

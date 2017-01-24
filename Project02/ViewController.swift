@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var countries = [String]()
     var correctAnswer = 0
@@ -40,6 +41,8 @@ class ViewController: UIViewController {
             title = "Wrong"
             score -= 1
         }
+        
+        self.scoreLabel.text = "Your score is: \(score)"
         
         let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
